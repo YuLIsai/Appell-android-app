@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Appell</string>
+
+    <string name="login">Inicia sesión</string>
+
+    <string name="pass">Contraseña</string>
+
+    <string name="user">Correo eléctronico</string>
+
+    <string name="signup">Registrar</string>
+
+    <string name="next">siguiente</string>
+    <string name="title_activity_home">Actividad Principal</string>
+    <string name="navigation_drawer_open">Abrir dibujador de navegacion</string>
+    <string name="navigation_drawer_close">Cerrar dibujador de navegacion</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Cabecera de navegación</string>
+    <string name="action_settings">Configuración</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Galeria</string>
+    <string name="menu_slideshow">Vista deslizada</string>
+    <string name="action_logout">Cerrar sesión</string>
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="hint_name">Nombre completo</string>
+    <string name="hello_blank_fragment">Hola desde un fragmen vacio</string>
+    <string name="hint_nss">Nss</string>
+    <string name="menu_register">Nuevo</string>
+    <string name="create_account">CREAR CUENTA</string>
+
+</resources>
