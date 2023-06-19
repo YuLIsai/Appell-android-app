@@ -1,4 +1,4 @@
-package com.yivg.appell.Utils
+package com.yivg.appell.Utils.Models
 
 data class userModel(
     val message: String,

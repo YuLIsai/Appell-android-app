@@ -3,7 +3,7 @@
 
     <string name="app_name">Appell</string>
 
-    <string name="login">Login</string>
+    <string name="login">Sign In to continue</string>
 
     <string name="pass">Password</string>
 
@@ -31,6 +31,26 @@
     <string name="hint_nss">Nss</string>
 
     <string name="menu_register">New</string>
+    <string name="option_yes">Ok</string>
+    <string name="Success" translatable="false">Success</string>
+    <string name="option_cancel">Cancel</string>
+    <string name="error_keyDeleted">Has occurred an error in logout</string>
+    <string name="session_finished">Please, Sign in again</string>
     <string name="create_account">CREATE ACCOUNT</string>
+    <string name="create_patient">NEW PATIENT</string>
+    <string name="error_message_network">An unespected error has occurred</string>
+    <string name="action_login">Por favor Inicia sesión</string>
+    <string name="appell_medical_center" translatable="false">A p p e l l</string>
+    <string name="medical_center" translatable="false">Medical Center</string>
+    <string name="welcome">Hello there, Welcome Back</string>
+    <string name="new_user_sign_up">New User? SIGN UP</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="alergy">Alergys</string>
+    <string name="phone">Number phone</string>
+    <string name="address">Address</string>
+    <string name="logo" translatable="false">logo</string>
+    <string name="success_patient" translatable="false">Success</string>
+    <string name="wave" translatable="false">wave</string>
+    <string name="blood_type">Blood type</string>
 
 </resources>

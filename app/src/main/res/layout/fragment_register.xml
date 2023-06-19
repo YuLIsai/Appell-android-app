@@ -1,21 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.register.RegisterFragment"
+    android:background="@color/white"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@color/yellow"
-    android:gravity="center_horizontal"
-    android:padding="@dimen/common_padding_default">
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp">
+
+        <ImageView
+            android:contentDescription="@string/wave"
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/wave" />
+
+        <ImageView
+            android:contentDescription="@string/logo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/logo_d_t"
+            android:transitionName="splash_img_second" />
+
+    </RelativeLayout>
 
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/common_margin_top_account_register"
+        android:padding="16dp"
         >
 
         <TextView
@@ -23,114 +48,182 @@
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="@string/create_account"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/create_patient"
             android:textAllCaps="true"
-            android:fontFamily="@font/planetncompact"
-            android:textColor="@color/black"
+            android:textColor="@color/ThemePrincipalColor"
             android:textSize="35sp"
             android:transitionName="transition_title_text" />
 
-        <TextView
-            android:id="@+id/signup_slide_text"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/circle_black_border"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="Ap"
-            android:fontFamily="@font/planetnv2"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:transitionName="transition_slide_text"/>
-
     </RelativeLayout>
-
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_name"
-            app:endIconMode="clear_text"
-            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
             app:endIconTint="@color/black"
+            app:hintTextColor="@color/black"
             app:startIconDrawable="@drawable/baseline_drive_file_rename_outline_24"
-            app:startIconTint="@color/black"
-            android:textColorHint="@color/black"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:startIconTint="@color/black">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etName"
+                android:id="@+id/edtName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:fontFamily="@font/rubik_medium"
                 android:inputType="textPersonName"
-                />
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/round_bloodtype_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/blood_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:inputType="none"
+                style="@style/Theme.AppCompat.Light.DarkActionBar"
+                android:text="@string/blood_type" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nss"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_nss"
-            app:endIconMode="clear_text"
-            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
             app:endIconTint="@color/black"
+            app:hintTextColor="@color/black"
             app:startIconDrawable="@drawable/baseline_numbers_24"
-            app:startIconTint="@color/black"
-            android:textColorHint="@color/black"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:startIconTint="@color/black">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etNss"
+                android:id="@+id/edtNss"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:fontFamily="@font/rubik_medium"
                 android:inputType="number"
-                />
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/email"
+            android:id="@+id/alergy"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/user"
-            app:endIconMode="clear_text"
-            app:hintTextColor="@color/black"
+            android:hint="@string/alergy"
+            android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
             app:endIconTint="@color/black"
-            app:startIconDrawable="@drawable/baseline_email_24"
-            app:startIconTint="@color/black"
-            android:textColorHint="@color/black"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/round_medical_information_24"
+            app:startIconTint="@color/black">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etemail"
+                android:id="@+id/edtAlergy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:inputType="textEmailAddress"
-                />
+                android:fontFamily="@font/rubik_medium"
+                android:inputType="textAutoCorrect"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/round_phone_24"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:inputType="phone"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/round_pin_drop_24"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:inputType="textAutoCorrect"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/registButton"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:height="60dp"
+            android:fontFamily="@font/rubik_medium"
+            android:backgroundTint="@color/ThemePrincipalColor"
+            android:padding="14dp"
+            app:cornerRadius="5dp"
+            />
+
     </LinearLayout>
 
-
-
 </LinearLayout>
+
+</ScrollView>
+

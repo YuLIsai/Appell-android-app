@@ -1,4 +1,4 @@
-package com.yivg.appell.Utils
+package com.yivg.appell.Utils.Models
 
 import com.google.gson.annotations.SerializedName
 

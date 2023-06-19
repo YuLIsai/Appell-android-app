@@ -9,6 +9,7 @@
 
     <style name="Theme.Appell.NoActionBar">
         <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
         <item name="windowNoTitle">true</item>
     </style>
 

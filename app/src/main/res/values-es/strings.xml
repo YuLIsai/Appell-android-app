@@ -11,7 +11,7 @@
 
     <string name="signup">Registrar</string>
 
-    <string name="next">siguiente</string>
+    <string name="next">Siguiente</string>
     <string name="title_activity_home">Actividad Principal</string>
     <string name="navigation_drawer_open">Abrir dibujador de navegacion</string>
     <string name="navigation_drawer_close">Cerrar dibujador de navegacion</string>
@@ -29,6 +29,20 @@
     <string name="hello_blank_fragment">Hola desde un fragmen vacio</string>
     <string name="hint_nss">Nss</string>
     <string name="menu_register">Nuevo</string>
+    <string name="option_yes">Ok</string>
+    <string name="option_cancel">Cancelar</string>
+    <string name="error_keyDeleted">Ocurrio un error al cerrar sesión</string>
+    <string name="session_finished">Por favor, vuelve a iniciar sesión</string>
     <string name="create_account">CREAR CUENTA</string>
+    <string name="create_patient">NUEVO PACIENTE</string>
+    <string name="error_message_network">Ocurrio un error inesperado</string>
+    <string name="action_login">Por favor Inicia sesión</string>
+    <string name="welcome">Hola, Bienvenido de vuelta</string>
+    <string name="new_user_sign_up">¿Nuevo? REGISTRATE</string>
+    <string name="forget_password">¿Olvidaste tu contraseña?</string>
+    <string name="alergy">Alergys</string>
+    <string name="phone">Number phone</string>
+    <string name="address">Address</string>
+    <string name="blood_type">Blood type</string>
 
 </resources>
